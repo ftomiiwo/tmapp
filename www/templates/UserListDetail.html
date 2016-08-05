@@ -1,0 +1,28 @@
+<ion-header-bar class="bar-stable">
+	<div>
+		<button class="button icon-left ion-home">Home</button>
+		<h1 class="title">{{item.user.name.first}} {{item.user.name.last}}</h1>
+	</div>
+
+</ion-header-bar>
+<ion-content>
+
+	<div class="list card">
+		<div class="item item-avatar">
+			<img src="{{item.picture.thumbnail}} " />
+			<h2>{{item.name.first}} {{item.name.last}}</h2>
+			<p>{{item.location.city}} {{item.password}}</p>
+		</div>
+		<div class="item item-icon-left">
+			<i class="icon ion-email"></i>
+			{{item.email}}
+		</div>
+		<div class="item item-icon-left">
+			<i class="icon ion-ios-telephone"></i>
+			{{item.phone}}
+		</div>
+		<div class="item">
+			<a nav-transition="none" href="#/UserList">User List</a>
+		</div>
+	</div>
+</ion-content>
